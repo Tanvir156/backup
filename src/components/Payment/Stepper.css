@@ -1,0 +1,151 @@
+.Stepper {
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 148px;
+}
+
+@media (max-width: 768px) {
+  .Stepper {
+    gap: 0;
+  }
+}
+
+.Stepper__step {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Stepper__indicator,
+.Stepper__label {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.Stepper__label {
+  margin: 0.5rem 0;
+  color: #cfd7de;
+}
+.Stepper_Stepper__info__zqvjO {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Stepper__info {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #d1dae2;
+  border-radius: 50%;
+  background-color: #d1dae2;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.horizontal_line {
+  margin: 16px 0;
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+  height: 0;
+}
+.Stepper .Stepper__step:last-child:after {
+  display: none;
+}
+
+.Stepper__indicator,
+.Stepper__label {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+.Stepper--inline .Stepper__indicator,
+.Stepper--inline .Stepper__label {
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+.Stepper--inline .Stepper__label {
+  text-align: left;
+  padding: 0 0.5rem;
+  background: #fff;
+}
+.Stepper__step {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Stepper--inline.Stepper--bottom .Stepper__label {
+  vertical-align: middle;
+}
+
+.Stepper--inline.Stepper--bottom .Stepper__step:after {
+  top: auto;
+  bottom: 1.75rem;
+}
+
+.Stepper--vertical .Stepper__step {
+  display: block;
+  text-align: left;
+}
+
+.Stepper--vertical .Stepper__label {
+  padding-left: 1rem;
+}
+
+.Stepper--vertical .Stepper__indicator,
+.Stepper--vertical .Stepper__label {
+  display: table-cell;
+}
+
+.Stepper--vertical .Stepper__panel {
+  margin-left: 3.5rem;
+}
+
+.Stepper--vertical .Stepper__step:after {
+  content: " ";
+  position: absolute;
+  left: 1.75rem;
+  top: 2.5rem;
+  bottom: -0.5rem;
+  width: 0;
+  height: auto;
+  border-left: 0.125rem solid #d1dae2;
+}
+
+.Stepper .Stepper__step.is-complete .Stepper__info {
+  border-color: green;
+  background-color: green;
+}
+
+.Stepper .Stepper__step.is-complete .Stepper__label {
+  color: #696866;
+}
+
+.Stepper .Stepper__step.is-active .Stepper__info {
+  border-color: #627c90;
+  background-color: #627c90;
+}
+
+.Stepper .Stepper__step.is-active .Stepper__label {
+  color: #696866;
+}
